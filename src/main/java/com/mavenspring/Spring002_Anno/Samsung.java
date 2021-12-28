@@ -1,12 +1,14 @@
 package com.mavenspring.Spring002_Anno;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component("mySamsung")
+@Component("samsung")//non qualified and decapitalized
 public class Samsung {
 	
 	@Autowired
+	@Qualifier("mediaTech")
 	MobileProcessor cpu;
 
 	public MobileProcessor getCpu() {
