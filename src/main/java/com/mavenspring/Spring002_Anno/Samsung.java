@@ -3,7 +3,7 @@ package com.mavenspring.Spring002_Anno;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component 
+@Component("mySamsung")
 public class Samsung {
 	
 	@Autowired
